@@ -1,13 +1,38 @@
-basic.showNumber(3)
-basic.showNumber(2)
-basic.showNumber(1)
+basic.showLeds(`
+    . # # # .
+    # . . . #
+    # . . . #
+    # . . . #
+    . # # # .
+    `)
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    . # . # .
+    . # # # .
+    . . . . .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . # . .
+    . . . . .
+    . . . . .
+    `)
+basic.showIcon(IconNames.Chessboard)
 basic.forever(function () {
-    basic.showIcon(IconNames.Scissors)
     basic.showLeds(`
-        # # . . .
-        # # . . .
-        . . # # #
-        # # . . .
-        # # . . .
+        . . . . .
+        . . # . .
+        . # # # .
+        . . # . .
+        . # . # .
+        `)
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        . . # . .
+        . # . # .
+        . . . . .
         `)
 })
